@@ -26,7 +26,7 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 export ACCELSIM_SETUP_ENVIRONMENT_WAS_RUN=
-export ACCELSIM_ROOT="$( cd "$( dirname "$BASH_SOURCE" )" && pwd )"
+export ACCELSIM_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]:-${(%):-%x}}" )" && pwd )"
 
 #   Different branches of Accel-Sim should have different values here
 #   For development, we use our internal repo and the dev branch
